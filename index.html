@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôn Tiến Đạt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tôn Tiến Đạt</h1>
+
+        <div class="content">
+            <div class="image">
+                <img src="asset/tontiendat.jpg" alt="Ảnh của Tôn Tiến Đạt">
+            </div>
+
+            <div class="text">
+                <p>
+                    Xin chào, tôi là <b>Tôn Tiến Đạt</b>, sinh năm 2006.
+                    Hiện tại tôi đang học lớp <b>DA24TTA</b> tại
+                    <b>Đại học Trà Vinh</b>.
+                    Đây là trang web đầu tiên của tôi.
+                </p>
+
+                <!-- Các nút -->
+                <button onclick="hienSoThich()">Sở thích</button>
+                <button onclick="hienThongTin()">Thông tin</button>
+                <button onclick="batNgo()">🎉 Bất ngờ</button>
+
+                <!-- Sở thích -->
+                <div id="sothich" style="display: none;">
+                    <h3>Sở thích</h3>
+                    <ul>
+                        <li>Lập trình web</li>
+                        <li>Học công nghệ mới</li>
+                        <li>Thiết kế giao diện website</li>
+                    </ul>
+                </div>
+
+                <!-- Thông tin -->
+                <div id="thongtin" style="display: none;">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>
+                        SĐT: 0354181632 <br>
+                        Nơi sống: Trà Vinh <br>
+                        Email: tontiendattv2021@gmail.com
+                    </p>
+                </div>
+
+                <!-- Bất ngờ -->
+                <div id="batngo" style="display: none;">
+                    <h3>🎊 Bất ngờ!</h3>
+                    <p>Chúc bạn học tốt và luôn vui vẻ 😄</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function hienSoThich() {
+            document.getElementById("sothich").style.display = "block";
+            document.getElementById("thongtin").style.display = "none";
+            document.getElementById("batngo").style.display = "none";
+            document.body.style.backgroundColor = "#f2f4f8";
+        }
+
+        function hienThongTin() {
+            document.getElementById("thongtin").style.display = "block";
+            document.getElementById("sothich").style.display = "none";
+            document.getElementById("batngo").style.display = "none";
+            document.body.style.backgroundColor = "#f2f4f8";
+        }
+
+        function batNgo() {
+            document.getElementById("batngo").style.display = "block";
+            document.getElementById("sothich").style.display = "none";
+            document.getElementById("thongtin").style.display = "none";
+            document.body.style.backgroundColor = "#ffeaa7";
+        }
+    </script>
+</body>
+</html>
